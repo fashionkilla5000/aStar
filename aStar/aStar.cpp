@@ -153,6 +153,7 @@ void aGwiazdka(double** G, int celX, int celY)
                             if (czyCel(x, y, celX, celY) == true) {
                                 getchar();
                                 cout << "Znaleziono droge!" << endl;
+                                cout << "\nWcisnij Enter, aby przejsc dalej" << endl;
                                 stworzDroge(G, zamknieta);
                                 cel = true;
                                 getchar();
@@ -234,6 +235,7 @@ int main(void) {
 
     G[celX+1][celY+1] = 3;
 
+    cout << "\nWcisnij Enter, aby przejsc dalej" << endl;
     aGwiazdka(G, celX, celY);
 
     cout << "\nWypisujemy na ekran\n\n";
